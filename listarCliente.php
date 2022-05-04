@@ -3,7 +3,6 @@ session_start();
 $title = "Dashboard";
 require_once "auth.php";
 require_once "config/settings.php";
-include 'funciones.php';
 
 
 
@@ -56,27 +55,27 @@ echo APP_NAME?></title> -->
             exit();
         }
 
-        $consulta = "SELECT * FROM CLIENTE ORDER by RUT_CLIENTE DESC ";
+        // $consulta = "SELECT * FROM CLIENTE ORDER by RUT_CLIENTE DESC ";
 
       ?>
 
         <table class="table">
             <thead>
                 <div class="container">
-                    <form method="post" class="form-inline">
+                <form method="get" class="form-inline">
                         <div class="form-group mr-3">
                             <input type="text" id="rut" name="rut" placeholder="Buscar por rut"
                                 class="form-control">
                         </div>
-                        <button  class="btn btn-primary">Ver resultados</button>
+                        <button class="btn btn-primary">Ver resultados</button>
                     </form>
                     <?php
-                    if (isset($_POST['rut'])) {
-                        $consultaSQL = "SELECT * FROM CLIENTE WHERE RUT_CLIENTE LIKE '%" . $_POST['rut'] . "%'";
+                    if (isset($_GET['rut'])) {
+                        $consultaSQL = "SELECT * FROM CLIENTE WHERE RUT_CLIENTE LIKE '%" . $_GET['rut'] . "%'";
                       } else {
                         $consultaSQL = "SELECT * FROM CLIENTE";
                       }
-                      $titulo = isset($_POST['rut']) ? 'Lista de clientes (' . $_POST['rut'] . ')' : 'Lista de clientes';
+                      $titulo = isset($_GET['rut']) ? 'Lista de clientes (' . $_GET['rut'] . ')' : 'Lista de clientes';
                     ?>
                 </div>
                 <tr>
@@ -92,7 +91,7 @@ echo APP_NAME?></title> -->
                 </tr>
             </thead>
             <tbody>
-                <?php  if ($resultado = mysqli_query($enlace, $consulta)) { ?>
+                <?php  if ($resultado = mysqli_query($enlace, $consultaSQL)) { ?>
                 <?php foreach ($resultado as $value){ ?>
                 <tr>
                     <td><?= $value['RUT_CLIENTE']; ?></td>
@@ -102,8 +101,8 @@ echo APP_NAME?></title> -->
                     <td><?= $value['TELEFONO_CLIENTE']; ?></td>
                     <td><?= $value['DIRECCION']; ?></td>
                     <td><?= $value['CORREO_ELECTRONICO']; ?></td>
-                    <td><center><a href="editarCliente.php?rut=<?= $value['RUT_CLIENTE']; ?>">Editar</a></center></td>
-                    <td><center>Eliminar</center></td>
+                    <td><center><a href="editarMecanico.php?rut=<?= $value['RUT_MECANICO']; ?>">Editar</a></center></td>
+                    <td><center><a href="eliminarMecanico.php?rut=<?= $value['RUT_MECANICO']; ?>">Eliminar</a></center></td>
                     
                 
                 </td>

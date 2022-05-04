@@ -1,15 +1,15 @@
 <?php 
 session_start();
-$title = "Editar cliente";
+$title = "Eliminar cliente";
 require_once "auth.php";
 require_once "config/settings.php";
 
 if ($_GET['rut']) {
     $rut = $_GET['rut'];
-    $sql = "DELETE FROM cliente WHERE RUT_CLIENTE = '$rut'";
+    $sql = "DELETE FROM mecanico WHERE RUT_MECANICO = '$rut'";
     $result = mysqli_query($conn, $sql);
     if ($result) {
-      header('Location: ' . APP_URL . 'listarCliente.php');
+      header('Location: ' . APP_URL . 'listarMecanico.php');
     } else {
       die($sql);
     }

@@ -82,6 +82,8 @@ echo APP_NAME?></title> -->
                         <td><?= $value['NUMERO_CHASIS']; ?></td>
                         <td><?= $value['KILOMETRAJE']; ?></td>
                         <td><?= $value['TIPO_VEHICULO']; ?></td>
+                        <td><center><a href="editarCliente.php?rut=<?= $value['RUT_CLIENTE']; ?>">Editar</a></center></td>
+                        <td><center><a href="eliminarCliente.php?rut=<?= $value['RUT_CLIENTE']; ?>">Eliminar</a></center></td>
                     </tr>
                     <?php } ?>
                     <?php mysqli_free_result($resultado); ?>

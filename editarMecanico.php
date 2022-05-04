@@ -1,6 +1,6 @@
 <?php
 session_start();
-$title = "Editar cliente";
+$title = "Editar mecanico";
 require_once "auth.php";
 require_once "config/settings.php";
 
@@ -14,14 +14,12 @@ if (isset($_POST) && !empty($_POST)) {
     $rut = $_GET['rut'];
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
-    $apellidoMaterno = $_POST['apellidoMaterno'];
-    $telefono = $_POST['telefono'];
-    $direccion = $_POST['direccion'];
     $email = $_POST['email'];
-    $sql = "UPDATE cliente SET NOMBRE_CLIENTE = '$nombre', APELLIDO_PATERNO_CLIENTE = '$apellido', APELLIDO_MATERNO_CLIENTE = '$apellidoMaterno', TELEFONO_CLIENTE = '$telefono', DIRECCION = '$direccion', CORREO_ELECTRONICO = '$email' WHERE RUT_CLIENTE = '$rut'";
+    $telefono = $_POST['telefono'];
+    $sql = "UPDATE mecanico SET NOMBRE_MECANICO = '$nombre', APELLIDO_MECANICO= '$apellido', CORREO_ELECTRONICO_MECANICO = '$email', TELEFONO_MECANICO = '$telefono' WHERE RUT_MECANICO = '$rut'";
     $resultUpdate = mysqli_query($conn, $sql);
     if ($resultUpdate) {
-        header('Location:' . APP_URL . 'listarCliente.php');
+        header('Location:' . APP_URL . 'listarMecanico.php');
     } else {
         die($sql);
     }
@@ -35,7 +33,7 @@ if (isset($_POST) && !empty($_POST)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php if (!empty($title)) {print($title . ' - ');}
-echo APP_NAME?></title>
+    echo APP_NAME?></title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
     <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
@@ -59,45 +57,46 @@ echo APP_NAME?></title>
             <div class="card">
                 <header class="card-header">
                     <p class="card-header-title">
-                        Editar Cliente
+                        Editar Mecanico
                     </p>
                 </header>
                 <div class="card-content">
                     <div class="content">
                         <?php 
-                        $query = "SELECT * FROM cliente WHERE RUT_CLIENTE ='$rut'";
+                        $query = "SELECT * FROM mecanico WHERE RUT_MECANICO ='$rut'";
                         $result = mysqli_query($conn, $query);
                         while ($row = mysqli_fetch_assoc($result)) { 
                         ?>
-                       <form action="<?= APP_URL . 'editarCliente.php?rut=' . $rut ?>" method="POST">
+                       <form action="<?= APP_URL . 'editarMecanico.php?rut=' . $rut ?>" method="POST">
                             <div class="field-body mb-3">
                                 <div class="field">
-                                    <label class="label">Rut Cliente:</label>
+                                    <label class="label">Rut Mecanico:</label>
                                     <div class="control has-icons-left">
-                                        <input type="text" class="input" name="rut" value="<?= $row['RUT_CLIENTE'] ?>" disabled>
+                                        <input type="text" class="input" name="rut" value="<?= $row['RUT_MECANICO'] ?>" disabled>
                                         <span class="icon is-small is-left">
                                             <i class="fa-solid fa-user"></i>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label class="label">Nombre Cliente</label>
+                                    <label class="label">Nombre Mecanico</label>
                                     <div class="control">
-                                        <input type="text" class="input" name="nombre" value="<?= $row['NOMBRE_CLIENTE'] ?>">
+                                        <input type="text" class="input" name="nombre" value="<?= $row['NOMBRE_MECANICO'] ?>">
                                     </div>
                                 </div>
                             </div>
                             <div class="field-body">
                                 <div class="field">
-                                    <label class="label">Apellido Paterno:</label>
+                                    <label class="label">Apellido Mecanico:</label>
                                     <div class="control">
-                                        <input type="text" class="input" name="apellido" value="<?= $row['APELLIDO_PATERNO_CLIENTE'] ?>">
+                                        <input type="text" class="input" name="apellido" value="<?= $row['APELLIDO_MECANICO'] ?>">
                                     </div>
                                 </div>
+                            <div class="field-body">
                                 <div class="field">
-                                    <label class="label">Apellido Materno</label>
+                                    <label class="label">Correo Electronico:</label>
                                     <div class="control">
-                                        <input type="text" class="input" name="apellidoMaterno" value="<?= $row['APELLIDO_MATERNO_CLIENTE'] ?>">
+                                        <input type="email" class="input" name="email" value="<?= $row['CORREO_ELECTRONICO_MECANICO'] ?>">
                                     </div>
                                 </div>
                             </div>
@@ -105,21 +104,7 @@ echo APP_NAME?></title>
                                 <div class="field">
                                     <label class="label">Telefono Contacto:</label>
                                     <div class="control">
-                                        <input type="text" class="input" name="telefono" value="<?= $row['TELEFONO_CLIENTE'] ?>">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Direccion:</label>
-                                    <div class="control">
-                                        <input type="text" class="input" name="direccion" value="<?= $row['DIRECCION'] ?>">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <label class="label">Correo Electronico:</label>
-                                    <div class="control">
-                                        <input type="email" class="input" name="email" value="<?= $row['CORREO_ELECTRONICO'] ?>">
+                                        <input type="text" class="input" name="telefono" value="<?= $row['TELEFONO_MECANICO'] ?>">
                                     </div>
                                 </div>
                             </div>

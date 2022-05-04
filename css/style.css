@@ -107,3 +107,8 @@ body {
     background-image: url("../img/Background-login.jpg");
     min-height: 100vh;
 }
+
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}

@@ -133,7 +133,7 @@
                         <div class="collapse multi-collapse" id="multiCollapseExample3">
                             <div class="card card-body">
                                 <li>
-                                    <a class="nav-link " href="listarCliente.php">
+                                    <a class="nav-link " href="AgregarRepuesto.php">
                                         <div class="icon icon-shape icon-sm border-radius-md text-center align-items-center justify-content-center "
                                             style="padding-bottom: 0px;">
                                             <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
@@ -142,7 +142,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="listarVehiculo.php">
+                                    <a class="nav-link " href="listarRepuestos.php">
                                         <div
                                             class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                                             <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
@@ -177,7 +177,7 @@
                     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Administrador</h6>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="./pages/profile.html">
+                    <a class="nav-link " href="perfilAdmin.php">
                         <div
                             class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
