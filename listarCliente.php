@@ -95,14 +95,13 @@ echo APP_NAME?></title> -->
                 <?php  if ($resultado = mysqli_query($enlace, $consulta)) { ?>
                 <?php foreach ($resultado as $value){ ?>
                 <tr>
-                    <td><?= $value['RUT_CLIENTE']; ?></td>
-                    <td><?= $value['NOMBRE_CLIENTE']; ?></td>
-                    <td><?= $value['APELLIDO_PATERNO_CLIENTE']; ?></td>
-                    <td><?= $value['APELLIDO_MATERNO_CLIENTE']; ?></td>
-                    <td><?= $value['TELEFONO_CLIENTE']; ?></td>
-                    <td><?= $value['DIRECCION']; ?></td>
-                    <td><?= $value['CORREO_ELECTRONICO']; ?></td>
-                    <td><center><a href="editarCliente.php?rut=<?= $value['RUT_CLIENTE']; ?>">Editar</a></center></td>
+                    <td><?= $value['id_repuesto']; ?></td>
+                    <td><?= $value['nombre_repuesto']; ?></td>
+                    <td><?= $value['descrip_repuesto']; ?></td>
+                    <td><?= $value['tipo_repuesto']; ?></td>
+                    <td><?= $value['calidad']; ?></td>
+                    <td><?= $value['anio_fabricacion']; ?></td>
+                    <td><center><a href="editarRepuesto.php?id=<?= $value['id_repuesto']; ?>">Editar</a></center></td>
                     <td><center>Eliminar</center></td>
                     
                 

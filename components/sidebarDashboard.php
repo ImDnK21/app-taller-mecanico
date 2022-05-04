@@ -76,108 +76,114 @@
                 </div>
             </div>
 
-                <a class="nav-link" data-bs-toggle="collapse" href="multiCollapseExample2" role="button"
-                    aria-expanded="false" aria-controls="multiCollapseExample2" style="padding-bottom: 10px;">Listado</a>
+
+            <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button"
+                aria-expanded="false" aria-controls="multiCollapseExample2" style="padding-bottom: 10px;">Gestion
+                del taller mecanico:</a>
 
 
-                <div class="row">
-                    <div class="col">
-                        <div class="collapse multi-collapse" id="multiCollapseExample2">
-                            <div class="card card-body">
-                                <li>
-                                    <a class="nav-link " href="listarCliente.php">
-                                        <div class="icon icon-shape icon-sm border-radius-md text-center align-items-center justify-content-center "
-                                            style="padding-bottom: 0px;">
-                                            <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-                                        </div>
-                                        <span class="nav-link-text ms-1">Listado Cliente</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="listarVehiculo.php">
-                                        <div
-                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                            <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-                                        </div>
-                                        <span class="nav-link-text ms-1">Listado Vehiculo</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="listarMecanico.php">
-                                        <div
-                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                            <i class="ni ni-app text-info text-sm opacity-10"></i>
-                                        </div>
-                                        <span class="nav-link-text ms-1">Listado Mecanico</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="listarRecepcion.php">
-                                        <div
-                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                            <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
-                                        </div>
-                                        <span class="nav-link-text ms-1">Listado de Vehiculo</span>
-                                    </a>
-                                </li>
-                            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            <li>
+                                <a class="nav-link " href="listarCliente.php">
+                                    <div class="icon icon-shape icon-sm border-radius-md text-center align-items-center justify-content-center "
+                                        style="padding-bottom: 0px;">
+                                        <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
+                                    </div>
+                                    <span class="nav-link-text ms-1">Listado de clientes</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="listarVehiculo.php">
+                                    <div
+                                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                        <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
+                                    </div>
+                                    <span class="nav-link-text ms-1">Listado de vehiculos</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="listarMecanico.php">
+                                    <div
+                                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                        <i class="ni ni-app text-info text-sm opacity-10"></i>
+                                    </div>
+                                    <span class="nav-link-text ms-1">Listado de mecanicos</span>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link " href="dashboardAgregarRecepcion.php">
+                                    <div
+                                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                        <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
+                                    </div>
+                                    <span class="nav-link-text ms-1">Recepcion de Vehiculo</span>
+                                </a>
+                            </li> -->
+
                         </div>
                     </div>
                 </div>
-                <a class="nav-link" data-bs-toggle="collapse" href="multiCollapseExample3" role="button"
-                    aria-expanded="false" aria-controls="multiCollapseExample3" style="padding-bottom: 10px;">Productos y repuestos</a>
+            </div>
+            <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button"
+                aria-expanded="false" aria-controls="multiCollapseExample3" style="padding-bottom: 10px;">Productos y repuestos:</a>
 
 
-                <div class="row">
-                    <div class="col">
-                        <div class="collapse multi-collapse" id="multiCollapseExample3">
-                            <div class="card card-body">
-                                <li>
-                                    <a class="nav-link " href="listarCliente.php">
-                                        <div class="icon icon-shape icon-sm border-radius-md text-center align-items-center justify-content-center "
-                                            style="padding-bottom: 0px;">
-                                            <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-                                        </div>
-                                        <span class="nav-link-text ms-1">Ag</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="listarVehiculo.php">
-                                        <div
-                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                            <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-                                        </div>
-                                        <span class="nav-link-text ms-1">Listado Vehiculo</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="listarMecanico.php">
-                                        <div
-                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                            <i class="ni ni-app text-info text-sm opacity-10"></i>
-                                        </div>
-                                        <span class="nav-link-text ms-1">Listado Mecanico</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="listarRecepcion.php">
-                                        <div
-                                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                            <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
-                                        </div>
-                                        <span class="nav-link-text ms-1">Listado de Vehiculo</span>
-                                    </a>
-                                </li>
-                            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                            <li>
+                                <a class="nav-link " href="agregarRepuesto.php">
+                                    <div class="icon icon-shape icon-sm border-radius-md text-center align-items-center justify-content-center "
+                                        style="padding-bottom: 0px;">
+                                        <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
+                                    </div>
+                                    <span class="nav-link-text ms-1">Agregar Productos</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="listarRepuesto.php">
+                                    <div
+                                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                        <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
+                                    </div>
+                                    <span class="nav-link-text ms-1">Listado de productos</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="listarMecanico.php">
+                                    <div
+                                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                        <i class="ni ni-app text-info text-sm opacity-10"></i>
+                                    </div>
+                                    <span class="nav-link-text ms-1">Listado de mecanicos</span>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link " href="dashboardAgregarRecepcion.php">
+                                    <div
+                                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                        <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
+                                    </div>
+                                    <span class="nav-link-text ms-1">Recepcion de Vehiculo</span>
+                                </a>
+                            </li> -->
+
                         </div>
                     </div>
                 </div>
+            </div>
 
+
+                
                 <li class="nav-item mt-3">
                     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Administrador</h6>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="./pages/profile.html">
+                    <a class="nav-link " href="perfilAdmin.php">
                         <div
                             class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>

@@ -34,10 +34,10 @@ echo APP_NAME?></title>
                     <div class="col-lg-7 mb-lg-0 mb-4">
                         <div class="card z-index-2 h-100">
                             <div class="card-header pb-0 pt-3 bg-transparent">
-                                <h6 class="text-capitalize">Sales overview</h6>
+                                <h6 class="text-capitalize">Recepcion de vehiculos por mes:</h6>
                                 <p class="text-sm mb-0">
                                     <i class="fa fa-arrow-up text-success"></i>
-                                    <span class="font-weight-bold">4% more</span> in 2021
+                                    <span class="font-weight-bold"></span> en 2022
                                 </p>
                             </div>
                             <div class="card-body p-3">
@@ -64,7 +64,7 @@ echo APP_NAME?></title>
                     <div class="card ">
                         <div class="card-header pb-0 p-3">
                             <div class="d-flex justify-content-between">
-                                <h6 class="mb-2">Sales by Country</h6>
+                                <h6 class="mb-2">Indicadores de:</h6>
                             </div>
                         </div>
                         <div class="table-responsive">
@@ -77,8 +77,8 @@ echo APP_NAME?></title>
                                                     <img src="./assets/img/icons/flags/US.png" alt="Country flag">
                                                 </div>
                                                 <div class="ms-4">
-                                                    <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                    <h6 class="text-sm mb-0">United States</h6>
+                                                    <p class="text-xs font-weight-bold mb-0">Ventas de repuestos:</p>
+                                                    <h6 class="text-sm mb-0"></h6>
                                                 </div>
                                             </div>
                                         </td>
@@ -389,7 +389,7 @@ echo APP_NAME?></title>
             new Chart(ctx1, {
                 type: "line",
                 data: {
-                    labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre","Octubre","Noviembre","Deciembre"],
                     datasets: [{
                         label: "Mobile apps",
                         tension: 0.4,
@@ -470,8 +470,8 @@ echo APP_NAME?></title>
                 Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
             }
         </script>
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
-        <script src="./assets/js/argon-dashboard.min.js?v=2.0.2"></script>
+        <!-- <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="./assets/js/argon-dashboard.min.js?v=2.0.2"></script> -->
         <?php
 include_once "components/footer.php";
 ?>
