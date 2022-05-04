@@ -1,11 +1,9 @@
-create database tallermecanico1;
-use tallermecanico1;
 -- phpMyAdmin SQL Dump
 -- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 02-05-2022 a las 04:18:29
+-- Tiempo de generación: 04-05-2022 a las 07:27:33
 -- Versión del servidor: 5.7.33
 -- Versión de PHP: 7.4.19
 
@@ -20,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `tallermecanico`
+-- Base de datos: `tallermecanico1`
 --
 
 -- --------------------------------------------------------
@@ -44,6 +42,7 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`RUT_CLIENTE`, `NOMBRE_CLIENTE`, `APELLIDO_PATERNO_CLIENTE`, `APELLIDO_MATERNO_CLIENTE`, `TELEFONO_CLIENTE`, `DIRECCION`, `CORREO_ELECTRONICO`) VALUES
+('', '', '', '', '', '', ''),
 ('20.049.422-2', 'Danko', 'Sanchez', 'ARANCIBIA', '+56958608563', 'gounod 10676', ''),
 ('20.049.428-8', 'Danko', 'Sanchez', 'ARANCIBIA', '56958608563', 'gounod 10676', ''),
 ('20.049.429-6', 'Danko', 'Sanchez', 'Arancibia', '958608563', 'los malvekes 1040', 'asd@gmail.com');
@@ -67,30 +66,33 @@ CREATE TABLE `mecanico` (
 --
 
 INSERT INTO `mecanico` (`RUT_MECANICO`, `NOMBRE_MECANICO`, `APELLIDO_MECANICO`, `CORREO_ELECTRONICO_MECANICO`, `TELEFONO_MECANICO`) VALUES
-('20.123.456-6', 'jose', 'perez', 'jperez12@gmail.com', 95234512),
+('20.123.456-6', 'andrea', 'perez', 'jperez12@gmail.com', 95234512),
 ('45213', 'dsadas', 'gfdgfds', 'gdsfsd', 15213);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `repuestos`
+-- Estructura de tabla para la tabla `repuesto`
 --
 
-CREATE TABLE `repuestos` (
-  `id_respuestos` int(5) NOT NULL,
+CREATE TABLE `repuesto` (
+  `id_respuesto` int(5) NOT NULL,
   `nombre_repuesto` varchar(30) DEFAULT NULL,
   `descrip_repuesto` varchar(50) DEFAULT NULL,
   `tipo_repuesto` varchar(30) DEFAULT NULL,
   `calidad` varchar(20) DEFAULT NULL,
-  `año_fabricacion` varchar(20) DEFAULT NULL
+  `anio_fabricacion` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `repuestos`
+-- Volcado de datos para la tabla `repuesto`
 --
 
-INSERT INTO `repuestos` (`id_respuestos`, `nombre_repuesto`, `descrip_repuesto`, `tipo_repuesto`, `calidad`, `año_fabricacion`) VALUES
-(1, 'Bomba de Agua', 'kajskjsa', 'Refrigeracion', 'Nuevo', '2015');
+INSERT INTO `repuesto` (`id_respuesto`, `nombre_repuesto`, `descrip_repuesto`, `tipo_repuesto`, `calidad`, `anio_fabricacion`) VALUES
+(1, 'Bomba de Agua', 'kajskjsa', 'Refrigeracion', 'Nuevo', '2015'),
+(1, 'bomba de agua', 'Lorem Ipsum is simply dummy text of the pr', 'tipo 1', 'nuevo', '2018'),
+(2, 'bomba de bencina', 'Lorem Ipsum is simply dummy text of the printing', 'tipo 2', 'nuevo', '2019'),
+(3, 'alzavidrios', 'Lorem Ipsum is simply dummy text of the printing a', 'tipo 3', 'nuevo', '2019');
 
 -- --------------------------------------------------------
 
@@ -145,7 +147,8 @@ INSERT INTO `vehiculo` (`PATENTE_VEHICULO`, `MARCA_VEHICULO`, `MODELO_VEHICULO`,
 ('bksd23', 'nissan', 'xtrial', 2021, 'diesel', 'mecanica', 'blanco', 'negro', 110000, 'suv'),
 ('dasdsa', 'Subaru', 'gdsad', 124, 'gsadas', 'gsad', '#970707', '12342131', 51231, ''),
 ('dsad', 'BMW', 'gasdas', 123, 'dsagsa', 'dsagfa', '#9d0101', '#42245b', 521321, 'sgasdas'),
-('gasdas', 'MG', 'gsads', 1984, 'Gas natural', 'CVT', '#9f1d1d', 'sadsagfsa', 213214, '');
+('gasdas', 'MG', 'gsads', 1984, 'Gas natural', 'CVT', '#9f1d1d', 'sadsagfsa', 213214, ''),
+('jdasjd', 'Toyota', 'yaris', 2014, 'Electrico', 'Automatica', '#8f1919', '5213215', 21421, '');
 
 --
 -- Índices para tablas volcadas
