@@ -19,7 +19,12 @@ if
     $sql = "INSERT INTO vehiculo (PATENTE_VEHICULO , MARCA_VEHICULO, MODELO_VEHICULO, ANIO_VEHICULO, TIPO_COMBUSTIBLE, TRANSMISION, COLOR_PRIMARIO,NUMERO_CHASIS,KILOMETRAJE,TIPO_VEHICULO) VALUES ('$patente', '$marca', '$modelo', '$anio', '$combustible', '$transmision', '$color_primario', '$numero_chasis', '$kilometraje', '$tipo')";   
     $result = mysqli_query($conn, $sql);
     if ($result){
-        die ("Vehiculo registrado correctamente");
+        echo'<script type="text/javascript">
+            alert("Tarea Guardada");
+            window.location.href="DashboardAgregarCliente.php";
+            </script>';
+            
+        exit();
     } else {
         die ($sql);
     }
@@ -192,7 +197,7 @@ echo APP_NAME?></title>
                                     </div>
                                 </div>
                                 <div class="button-submit">
-                                    <button type="submit" class="btn btn-secondary">Guardar</button>
+                                    <button type="submit" class="btn btn-primary" style="text-align: center;">Guardar</button>
                                 </div>
                             </form>
                         </div>

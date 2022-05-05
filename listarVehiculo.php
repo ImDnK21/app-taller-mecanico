@@ -47,12 +47,29 @@ echo APP_NAME?></title> -->
             exit();
         }
 
-        $consulta = "SELECT * FROM VEHICULO ORDER by PATENTE_VEHICULO DESC ";
+        $SQLconsulta = "SELECT * FROM VEHICULO ORDER by PATENTE_VEHICULO DESC ";
 
       ?>
         <div class="table-responsive">
             <table class="table">
                 <thead>
+                    <div class="container">
+                        <form method="GET" class="form-inline">
+                            <div class="form-group mr-3">
+                                <input type="text" id="patente" name="patente" placeholder="Buscar por patente"
+                                    class="form-control">
+                            </div>
+                            <button class="btn btn-primary">Ver resultados</button>
+                        </form>
+                        <?php
+                    if (isset($_GET['patente'])) {
+                        $consultaSQL = "SELECT * FROM VEHICULO WHERE PATENTE_VEHICULO LIKE '%" . $_GET['patente'] . "%'";
+                      } else {
+                        $consultaSQL = "SELECT * FROM VEHICULO";
+                      }
+                      $titulo = isset($_GET['patente']) ? 'Lista de mecanicos (' . $_GET['patente'] . ')' : 'Lista de mecanicos';
+                    ?>
+                    </div>
                     <tr>
                         <th><abbr title="patente_vehiculo">Patente Vehiculo</abbr></th>
                         <th>
@@ -69,7 +86,7 @@ echo APP_NAME?></title> -->
                     </tr>
                 </thead>
                 <tbody>
-                    <?php  if ($resultado = mysqli_query($enlace, $consulta)) { ?>
+                    <?php  if ($resultado = mysqli_query($enlace, $SQLconsulta)) { ?>
                     <?php foreach ($resultado as $value){ ?>
                     <tr>
                         <td><?= $value['PATENTE_VEHICULO']; ?></td>
@@ -82,8 +99,13 @@ echo APP_NAME?></title> -->
                         <td><?= $value['NUMERO_CHASIS']; ?></td>
                         <td><?= $value['KILOMETRAJE']; ?></td>
                         <td><?= $value['TIPO_VEHICULO']; ?></td>
-                        <td><center><a href="editarCliente.php?rut=<?= $value['RUT_CLIENTE']; ?>">Editar</a></center></td>
-                        <td><center><a href="eliminarCliente.php?rut=<?= $value['RUT_CLIENTE']; ?>">Eliminar</a></center></td>
+                        <td>
+                            <center><a href="editarVehiculo.php?rut=<?= $value['PATENTE_VEHICULO']; ?>">Editar</a></center>
+                        </td>
+                        <td>
+                            <center><a href="eliminarVehiculo.php?rut=<?= $value['PATENTE_VEHICULO']; ?>">Eliminar</a>
+                            </center>
+                        </td>
                     </tr>
                     <?php } ?>
                     <?php mysqli_free_result($resultado); ?>

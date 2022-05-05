@@ -1,6 +1,6 @@
 <?php
 // Parámetros:
-define("APP_NAME", "Taller Mecánico");
+define("APP_NAME", "Nuvo Automotive");
 define("APP_URL", "https://localhost/app-taller-mecanico/");
 
 // Configuración base de datos:

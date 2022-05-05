@@ -34,10 +34,9 @@ echo APP_NAME?></title>
                     <div class="col-lg-7 mb-lg-0 mb-4">
                         <div class="card z-index-2 h-100">
                             <div class="card-header pb-0 pt-3 bg-transparent">
-                                <h6 class="text-capitalize">Sales overview</h6>
+                                <h6 class="text-capitalize">Meses de alta demanda en 2022</h6>
                                 <p class="text-sm mb-0">
-                                    <i class="fa fa-arrow-up text-success"></i>
-                                    <span class="font-weight-bold">4% more</span> in 2021
+
                                 </p>
                             </div>
                             <div class="card-body p-3">
@@ -64,7 +63,7 @@ echo APP_NAME?></title>
                     <div class="card ">
                         <div class="card-header pb-0 p-3">
                             <div class="d-flex justify-content-between">
-                                <h6 class="mb-2">Sales by Country</h6>
+                                <h6 class="mb-2">Estadiscticas y reportes</h6>
                             </div>
                         </div>
                         <div class="table-responsive">
@@ -74,29 +73,29 @@ echo APP_NAME?></title>
                                         <td class="w-30">
                                             <div class="d-flex px-2 py-1 align-items-center">
                                                 <div>
-                                                    <img src="./assets/img/icons/flags/US.png" alt="Country flag">
+                                                    
                                                 </div>
                                                 <div class="ms-4">
-                                                    <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                    <h6 class="text-sm mb-0">United States</h6>
+                                                    <p class="text-xs font-weight-bold mb-0">Producto mas solicitado:</p>
+                                                    <h6 class="text-sm mb-0">Bomba de Agua GMB GWN-89A</h6>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                                <h6 class="text-sm mb-0">2500</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Cantidad:</p>
+                                                <h6 class="text-sm mb-0">85</h6>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                                <h6 class="text-sm mb-0">$230,900</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Valor estimado:</p>
+                                                <h6 class="text-sm mb-0">$34.990</h6>
                                             </div>
                                         </td>
                                         <td class="align-middle text-sm">
                                             <div class="col text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                                <p class="text-xs font-weight-bold mb-0">Porcentaje de venta:</p>
                                                 <h6 class="text-sm mb-0">29.9%</h6>
                                             </div>
                                         </td>
@@ -108,26 +107,26 @@ echo APP_NAME?></title>
                                                     <img src="./assets/img/icons/flags/DE.png" alt="Country flag">
                                                 </div>
                                                 <div class="ms-4">
-                                                    <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                    <h6 class="text-sm mb-0">Germany</h6>
+                                                    <p class="text-xs font-weight-bold mb-0">Servicios mas presupuestados</p>
+                                                    <h6 class="text-sm mb-0">Desabolladura Total del vehiculo</h6>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                                <h6 class="text-sm mb-0">3.900</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Cantidad:</p>
+                                                <h6 class="text-sm mb-0">190</h6>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                                <h6 class="text-sm mb-0">$440,000</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Costo del servicio:</p>
+                                                <h6 class="text-sm mb-0">Dependera del analisis a <br> realizar del vehiculo</h6>
                                             </div>
                                         </td>
                                         <td class="align-middle text-sm">
                                             <div class="col text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                                <p class="text-xs font-weight-bold mb-0">Porcentaje en ralacion <br>a servicios contratados</p>
                                                 <h6 class="text-sm mb-0">40.22%</h6>
                                             </div>
                                         </td>
@@ -136,30 +135,30 @@ echo APP_NAME?></title>
                                         <td class="w-30">
                                             <div class="d-flex px-2 py-1 align-items-center">
                                                 <div>
-                                                    <img src="./assets/img/icons/flags/GB.png" alt="Country flag">
+                                                    
                                                 </div>
                                                 <div class="ms-4">
-                                                    <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                    <h6 class="text-sm mb-0">Great Britain</h6>
+                                                    <p class="text-xs font-weight-bold mb-0">Cliente frecuentes:</p>
+                                                    <h6 class="text-sm mb-0">Año 2022</h6>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                                <h6 class="text-sm mb-0">1.400</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Abril 2022:</p>
+                                                <h6 class="text-sm mb-0">4</h6>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                                <h6 class="text-sm mb-0">$190,700</h6>
+                                            <p class="text-xs font-weight-bold mb-0">Mayo 2022</p>
+                                                <h6 class="text-sm mb-0">9</h6>
                                             </div>
                                         </td>
                                         <td class="align-middle text-sm">
                                             <div class="col text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                                                <h6 class="text-sm mb-0">23.44%</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Junio 2022</p>
+                                                <h6 class="text-sm mb-0">6%</h6>
                                             </div>
                                         </td>
                                     </tr>
@@ -167,29 +166,27 @@ echo APP_NAME?></title>
                                         <td class="w-30">
                                             <div class="d-flex px-2 py-1 align-items-center">
                                                 <div>
-                                                    <img src="./assets/img/icons/flags/BR.png" alt="Country flag">
+                                                    
                                                 </div>
                                                 <div class="ms-4">
-                                                    <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                    <h6 class="text-sm mb-0">Brasil</h6>
+                                                    <p class="text-xs font-weight-bold mb-0">Servicios Extras <br> mas solicitados:</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                                <h6 class="text-sm mb-0">562</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Limpieza interior <br>de vehiculo</p>
+
                                             </div>
                                         </td>
                                         <td>
                                             <div class="text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                                <h6 class="text-sm mb-0">$143,960</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Traslado/recogida<br> casa/trabajo:</p>
                                             </div>
                                         </td>
                                         <td class="align-middle text-sm">
                                             <div class="col text-center">
-                                                <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                                <p class="text-xs font-weight-bold mb-0">Inspeccion total para <BR> revision tecnica:</p>
                                                 <h6 class="text-sm mb-0">32.14%</h6>
                                             </div>
                                         </td>
@@ -202,7 +199,7 @@ echo APP_NAME?></title>
                 <div class="col-lg-5">
                     <div class="card">
                         <div class="card-header pb-0 p-3">
-                            <h6 class="mb-0">Categories</h6>
+                            <h6 class="mb-0">Categorias</h6>
                         </div>
                         <div class="card-body p-3">
                             <ul class="list-group">
@@ -275,23 +272,23 @@ echo APP_NAME?></title>
                                 ©
                                 <script>
                                     document.write(new Date().getFullYear())
-                                </script>, made with <i class="fa fa-heart"></i> by
-                                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a> for a better web.
+                                </script>
+                                
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
                                 <li class="nav-item">
-                                    <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
+                                    <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank"></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
+                                    <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">Sobre Nosotros</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
+                                    <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">Licencias</a>
                                 </li>
                             </ul>
                         </div>

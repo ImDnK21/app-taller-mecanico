@@ -101,8 +101,8 @@ echo APP_NAME?></title> -->
                     <td><?= $value['TELEFONO_CLIENTE']; ?></td>
                     <td><?= $value['DIRECCION']; ?></td>
                     <td><?= $value['CORREO_ELECTRONICO']; ?></td>
-                    <td><center><a href="editarMecanico.php?rut=<?= $value['RUT_MECANICO']; ?>">Editar</a></center></td>
-                    <td><center><a href="eliminarMecanico.php?rut=<?= $value['RUT_MECANICO']; ?>">Eliminar</a></center></td>
+                    <td><center><a href="editarCliente.php?rut=<?= $value['RUT_CLIENTE']; ?>">Editar</a></center></td>
+                    <td><center><a href="eliminarCliente.php?rut=<?= $value['RUT_CLIENTE']; ?>">Eliminar</a></center></td>
                     
                 
                 </td>

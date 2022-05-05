@@ -59,7 +59,7 @@ echo APP_NAME?></title>
 
         <div class="container py-3">
             <div class="card">
-                
+
                 <header class="card-header">
                     <p class="card-header-title">
                         Perfil Administrador
@@ -68,85 +68,81 @@ echo APP_NAME?></title>
                 <div class="card-content">
                     <div class="content">
                         <?php
-                        var_dump ($_SESSION);
-                    echo $query = "SELECT * FROM usuario WHERE id_usuario = '".$_SESSION['userID']."'";
+                    $query = "SELECT * FROM usuario WHERE id_usuario = '".$_SESSION['userID']."'";
 
                         $result = mysqli_query($conn, $query);
                         while ($row = mysqli_fetch_assoc($result)) { 
                         ?>
                         <form action="<?= APP_URL . 'perfilAdmin.php?rut=' . $rut ?>" method="POST"">
-                            <div class="field-body mb-3">
-                                <div class="field">
-                                    <label class="label">Rut :</label>
-                                    <div class="control has-icons-left">
-                                        <input type="text" class="input" name="rut" value="<?= $row['ID_USUARIO'] ?>" disabled>
-                                        <span class="icon is-small is-left">
-                                            <i class="fa-solid fa-user"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Nombre</label>
-                                    <div class="control">
-                                        <input type="text" class="input" name="nombre" value="<?= $row['NOMBRE_USUARIO'] ?>" >
-                                    </div>
+                            <div class=" field-body mb-3">
+                            <div class="field">
+                                <label class="label">Rut :</label>
+                                <div class="control has-icons-left">
+                                    <input type="text" class="input" name="rut" value="<?= $row['ID_USUARIO'] ?>"
+                                        disabled>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
                                 </div>
                             </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <label class="label">Apellido:</label>
-                                    <div class="control">
-                                        <input type="text" class="input" name="apellido" value="<?= $row['APELLIDO_USUARIO'] ?>" >
-                                    </div>
+                            <div class="field">
+                                <label class="label">Nombre</label>
+                                <div class="control">
+                                    <input type="text" class="input" name="nombre"
+                                        value="<?= $row['NOMBRE_USUARIO'] ?>">
                                 </div>
-                                <div class="field">
-                                    <div class="field">
-                                        <label class="label">Correo Electronico:</label>
-                                        <div class="control">
-                                            <input type="email" class="input" name="email" value="<?= $row['CORREO_ELECTRONICO'] ?>" >
-                                        </div>
-                                    </div>
+                            </div>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <label class="label">Apellido:</label>
+                            <div class="control">
+                                <input type="text" class="input" name="apellido"
+                                    value="<?= $row['APELLIDO_USUARIO'] ?>">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="field">
+                                <label class="label">Correo Electronico:</label>
+                                <div class="control">
+                                    <input type="email" class="input" name="email"
+                                        value="<?= $row['CORREO_ELECTRONICO'] ?>">
                                 </div>
-                                <div class="field">
-                                    <div class="field">
-                                    <label class="label "for="password">Password:</label>
-                                        <div class="control">
-                                            <input class="input" type="password"  id="password" value="<?= $row['PASSWORD'] ?>" >
-                                            <i class="bi bi-eye-slash" id="togglePassword"></i>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="field">
+                                <label class="label " for="password">Password:</label>
+                                <div class="control" style="display: flex;">
+                                    <input class="input" type="password" id="password" value="<?= $row['PASSWORD'] ?>"
+                                        style="position: initial;">
+                                    <i class="bi bi-eye-slash" id="togglePassword"
+                                        style="margin-left: -30px; margin-top: 5px;"></i>
                                 </div>
-                                <div class="field">
-                                    <div class="field">
-                                    <label class="label "for="rol">Rol:</label>
-                                        <div class="control">
-                                            <input class="input" type="text"  value="<?= $row['ROL'] ?>" >
+                            </div>
+                        </div>
 
-                                        </div>
-                                    </div>
-                                </div>
-                                
 
                         </form>
                         <script>
-        const togglePassword = document.querySelector("#togglePassword");
-        const password = document.querySelector("#password");
+                            const togglePassword = document.querySelector("#togglePassword");
+                            const password = document.querySelector("#password");
 
-        togglePassword.addEventListener("click", function () {
-            // toggle the type attribute
-            const type = password.getAttribute("type") === "password" ? "text" : "password";
-            password.setAttribute("type", type);
-            
-            // toggle the icon
-            this.classList.toggle("bi-eye");
-        });
+                            togglePassword.addEventListener("click", function () {
+                                // toggle the type attribute
+                                const type = password.getAttribute("type") === "password" ? "text" : "password";
+                                password.setAttribute("type", type);
 
-        // prevent form submit
-        const form = document.querySelector("form");
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-        });
-    </script>
+                                // toggle the icon
+                                this.classList.toggle("bi-eye");
+                            });
+
+                            // prevent form submit
+                            const form = document.querySelector("form");
+                            form.addEventListener('submit', function (e) {
+                                e.preventDefault();
+                            });
+                        </script>
                         <?php } ?>
                     </div>
                 </div>

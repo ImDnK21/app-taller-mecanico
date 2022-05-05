@@ -45,6 +45,20 @@ echo APP_NAME?></title>
     <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
     <link id="pagestyle" href="./assets/css/argon-dashboard.css?v=2.0.2" rel="stylesheet" />
     <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+    <style>
+        .is-complete {
+            text-decoration: line-through;
+        }
+
+        .button-submit {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            text-align: center;
+            
+
+        }
+        
+    </style>
     <link rel="stylesheet" href="<?=APP_URL . 'css/bulma.min.css'?>">
 </head>
 
@@ -119,11 +133,11 @@ echo APP_NAME?></title>
                                     </div>
                                 </div>
                             </div>
-                            <div class="buttons">
-                                <button type="submit" class="button is-primary">Guardar</button>
-
-                            </div>
+                            
                         </form>
+                        <div class="button-submit">
+                                    <button type="submit" class="btn btn-primary" style="text-align: center;">Guardar</button>
+                                </div>
                     </div>
                 </div>
 

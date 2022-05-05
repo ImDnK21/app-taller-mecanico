@@ -6,6 +6,7 @@ require_once "config/settings.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,8 +21,23 @@ echo APP_NAME?></title>
     <link id="pagestyle" href="./assets/css/argon-dashboard.css?v=2.0.2" rel="stylesheet" />
     <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
     <link rel="stylesheet" href="<?=APP_URL . 'css/bulma.min.css'?>">
+    <style>
+        .is-complete {
+            text-decoration: line-through;
+        }
+
+        .button-submit {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            text-align: center;
+
+
+        }
+    </style>
 </head>
+
 <body>
+
     <body class="g-sidenav-show bg-gray-100">
         <div class="min-height-300 bg-primary position-absolute w-100"></div>
         <?php include_once 'components/sidebarDashboard.php';?>
@@ -31,76 +47,77 @@ echo APP_NAME?></title>
             <!-- End Navbar -->
 
             <div class="container py-3">
-    <div class="card">
-        <header class="card-header">
-            <p class="card-header-title">
-                Registrar Recepcion de vehiculo
-            </p>
-        </header>
-        <div class="card-content">
-            <div class="content">
-                <form method="POST">
-                    <div class="field-body mb-3">
-                        <div class="field">
-                            <label class="label">Rut Cliente:</label>
-                            <div class="control has-icons-left">
-                                <input type="text" class="input">
-                                <span class="icon is-small is-left"> 
-                                    <i class=""></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label">Patente Vehiculo:</label>
-                            <div class="control">
-                                <input type="number" class="input">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Registrar Recepcion de vehiculo
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <form method="POST">
+                                <div class="field-body mb-3">
+                                    <div class="field">
+                                        <label class="label">Rut Cliente:</label>
+                                        <div class="control has-icons-left">
+                                            <input type="text" class="input">
+                                            <span class="icon is-small is-left">
+                                                <i class=""></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label">Patente Vehiculo:</label>
+                                        <div class="control">
+                                            <input type="number" class="input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <label class="label">Nombre Mecanico a cargo:</label>
+                                        <div class="control">
+                                            <input type="text" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label">Observacion:</label>
+                                        <div class="control">
+                                            <input type="text" class="input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <label class="label">Servicio Solicitado:</label>
+                                        <div class="control">
+                                            <input type="text" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label">Fecha Ingreso:</label>
+                                        <div class="control">
+                                            <input type="date" class="input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <label class="label">Fecha Salida:</label>
+                                        <div class="control">
+                                            <input type="date" class="input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="button-submit">
+                                <button type="submit" class="btn btn-primary"
+                                    style="text-align: center;">Guardar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <label class="label">Nombre Mecanico a cargo:</label>
-                            <div class="control">
-                                <input type="text" class="input">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label">Observacion:</label>
-                            <div class="control">
-                                <input type="text" class="input">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <label class="label">Servicio Solicitado:</label>
-                            <div class="control">
-                                <input type="text" class="input">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label">Fecha Ingreso:</label>
-                            <div class="control">
-                                <input type="date" class="input">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <label class="label">Fecha Salida:</label>
-                            <div class="control">
-                                <input type="date" class="input">
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
-        </div>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Guardar</a>
-        </footer>
-    </div>
-</div>
             </div>
             </div>
         </main>
