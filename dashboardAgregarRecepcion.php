@@ -40,6 +40,14 @@ echo APP_NAME?></title>
         <div class="card-content">
             <div class="content">
                 <form method="POST">
+                    <div class="field-body">
+                        <div class="field">
+                            <label class="label">ID Orden de trabajo</label>
+                            <div>
+                                <input type="text" class="input" placeholder="" disabled>
+                            </div>
+                        </div>
+                    </div>
                     <div class="field-body mb-3">
                         <div class="field">
                             <label class="label">Rut Cliente:</label>

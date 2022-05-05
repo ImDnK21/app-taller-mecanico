@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 $title = "Dashboard";
@@ -19,7 +20,11 @@ if
     $sql = "INSERT INTO vehiculo (PATENTE_VEHICULO , MARCA_VEHICULO, MODELO_VEHICULO, ANIO_VEHICULO, TIPO_COMBUSTIBLE, TRANSMISION, COLOR_PRIMARIO,NUMERO_CHASIS,KILOMETRAJE,TIPO_VEHICULO) VALUES ('$patente', '$marca', '$modelo', '$anio', '$combustible', '$transmision', '$color_primario', '$numero_chasis', '$kilometraje', '$tipo')";   
     $result = mysqli_query($conn, $sql);
     if ($result){
-        die ("Vehiculo registrado correctamente");
+        '<script type="text/javascript">
+            alert("Vehiculo agregado correctamente");
+            window.location.href="DashboardAgregarVehiculo.php";
+            </script>';
+        
     } else {
         die ($sql);
     }
@@ -178,7 +183,7 @@ echo APP_NAME?></title>
                                     <div class="field">
                                         <label class="label">Tipo Vehiculo:</label>
                                         <div class="select">
-                                            <select style="width: 100%" name="tipo_vehiculo">
+                                            <select style="width: 100%" name="tipo_vehicul\">
                                                 <option>Sedan</option>
                                                 <option>Station Wagon</option>
                                                 <option>HatchBack</option>

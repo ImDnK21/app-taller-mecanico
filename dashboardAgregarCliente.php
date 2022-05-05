@@ -17,7 +17,7 @@ if
     $result = mysqli_query($conn, $sql);
     if ($result){
         echo'<script type="text/javascript">
-            alert("Tarea Guardada");
+            alert("Cliente agregado correctamente");
             window.location.href="DashboardAgregarCliente.php";
             </script>';
             

@@ -47,6 +47,14 @@ if (!empty($_POST)) {
                 </div>
                 <div class="card-content">
                     <div class="field">
+                        <label class="label" >ID Orden de trabajo</label>
+                        <div class="control">
+                            <input type="text" name="idot" class="input" placeholder="ID Orden de trabajo" disabled>
+                        </div>                
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="field">
                         <label class="label">Nombre:</label>
                         <div class="control">
                             <input type="text" name="firstname" class="input">

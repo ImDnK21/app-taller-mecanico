@@ -13,7 +13,10 @@ if
     $sql = "INSERT INTO mecanico (RUT_MECANICO, NOMBRE_MECANICO, APELLIDO_MECANICO, CORREO_ELECTRONICO_MECANICO, TELEFONO_MECANICO) VALUES ('$rut', '$nombre', '$apellido','$correo', '$telefono' )";
     $result = mysqli_query($conn, $sql);
     if ($result){
-        die ("Mecanico registrado correctamente");
+        '<script type="text/javascript">
+            alert("Mecanico agregado correctamente");
+            window.location.href="DashboardAgregarMecanico.php";
+            </script>';
     } else {
         die ($sql);
     }
